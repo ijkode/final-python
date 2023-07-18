@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo docker run -itd --name final-python -p 80:80 lirlib/final-python:39
