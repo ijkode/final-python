@@ -22,7 +22,7 @@ pipeline {
             steps {
                 sh "docker run --name final-python -d -p 8081:5000 final-python:${env.BUILD_NUMBER}"
                 sh "sleep 5"
-                sh "curl http://3.80.24.157:8081/api/doc"
+                sh "curl http://localhost:8081/api/doc"
             }
         }
 
